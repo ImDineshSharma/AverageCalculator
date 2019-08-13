@@ -1,0 +1,27 @@
+import java.util.*;
+
+// we will be using scanner class for user input
+
+public AverageCalculator{
+  
+  public static void main(String[] args){
+  
+  // user the scanner by creating an objcet for user input
+     
+     System.out.println("Enter 10 values here: ");
+     
+     Scanner cn = new Scanner(System.in);
+     
+     int InputHolder, int average;
+     int total = 0;
+     int counter = 0;
+     
+     while ( counter < 10 ) {
+       InputHolder = cn.nextInt();
+       total = total + InputHolder;
+       counter++;
+     }
+     average = total / 10;
+     System.out.println("The average is " + average);
+  }
+}
